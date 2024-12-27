@@ -196,7 +196,7 @@ int clientConnection(const char *server_ip, int port){
         write(client_fd, &tempBalance, sizeof(tempBalance));
         write(client_fd, tempPassword, sizeof(tempPassword));
         read(client_fd, &tempAccNo, sizeof(tempAccNo));
-        printf("Created an account with account no %d and balance %02f", tempAccNo, tempBalance);
+        printf("Created an account with account no %d and balance %02f\n", tempAccNo, tempBalance);
     }
     return 0;
 }
